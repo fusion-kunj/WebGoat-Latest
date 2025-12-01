@@ -6,7 +6,7 @@ on:
 jobs:
   pre-commit:
     name: Pre-commit check
-    runs-on: WebGoat-Kali
+    runs-on: self-hosted
     steps:
       - name: Checkout git repository
         uses: actions/checkout@v4.1.6
@@ -18,7 +18,7 @@ jobs:
           java-version: '23'
 
   build:
-    runs-on: WebGoat-Kali
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4.1.6
 
